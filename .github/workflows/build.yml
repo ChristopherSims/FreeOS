@@ -1,9 +1,12 @@
 name: Build and lint
 on:
-  push:
-    paths:
-      - 'linux-cachyos/PKGBUILD'
-      - '.github/workflows/build.yml'
+  schedule:
+      # Run every Sunday at 11 PM UTC
+      - cron: '0 23 * * 0'
+  #push:
+  #  paths:
+  #    - 'linux-cachyos/PKGBUILD'
+  #    - '.github/workflows/build.yml'
   workflow_dispatch:
 
 env:
