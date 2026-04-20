@@ -37,7 +37,7 @@ jobs:
           git config core.protectNTFS false
       - name: Add upstream remote
         run: |
-          git remote add upstream-libsysmd https://github.com/Jeffrey-Sardina/liberated-systemd
+          git remote add upstream-liberated-systemd https://github.com/Jeffrey-Sardina/liberated-systemd
           git fetch upstream-liberated-systemd master
       - name: Run sync script
         id: sync
